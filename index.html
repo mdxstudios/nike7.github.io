@@ -6,92 +6,87 @@
     <title>Nike7</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            background-color: #1a001a;
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            text-align: center;
-            padding: 50px;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-            color: #333;
-        }
-
-        .about-section {
-            background-color: #e0f7ff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .about-section h2 {
-            font-size: 2em;
-            margin: 0;
-            color: #555;
-        }
-
-        .about-section p {
-            font-size: 1.2em;
-            color: #666;
-        }
-
-        /* Blue background with stars */
-        .star-section {
-            background-color: #00509e;
-            padding: 60px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .star {
-            color: #fff;
-            font-size: 2em;
-            position: absolute;
-        }
-
-        /* Randomly position stars */
-        .star:nth-child(1) { top: 20px; left: 30%; }
-        .star:nth-child(2) { top: 40px; right: 25%; }
-        .star:nth-child(3) { top: 70px; left: 70%; }
-        .star:nth-child(4) { top: 120px; left: 15%; }
-        .star:nth-child(5) { top: 150px; right: 10%; }
-
-        footer {
-            text-align: center;
             padding: 20px;
-            background-color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
             color: #fff;
-            font-size: 0.9em;
+            margin-bottom: 0.5em;
+        }
+
+        p, a {
+            font-size: 1.1em;
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff66ff;
+        }
+
+        .about-section a {
+            color: #7abaff;
+        }
+
+        .projects-section {
+            margin-top: 2em;
+        }
+
+        .projects-section h2 {
+            font-size: 2em;
+            color: #ffffff;
+            margin-bottom: 0.5em;
+        }
+
+        .project-link {
+            display: inline-block;
+            background-color: #4b0082;
+            color: #ffccff;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .star-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://via.placeholder.com/15/ffffff?text=*');
+            background-size: 40px 40px;
+            opacity: 0.1;
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Nike7</h1>
-    </header>
+    <div class="star-background"></div>
 
-    <section class="about-section">
-        <h2>About Me</h2>
-        <p>I'm a small YouTuber and gamer, and I dont upload videos currently. Stay tuned for more updates!</p>
-    </section>
+    <h1>Nike7</h1>
+    <p>Hey there! I'm Nike7, just a small YouTuber and gamer. Currently uploading videos regularly!</p>
+    
+    <div class="about-section">
+        <p>I'm passionate about gaming and content creation. I enjoy sharing my gameplay experiences with others!</p>
+    </div>
 
-    <section class="star-section">
-        <div class="star">★</div>
-        <div class="star">★</div>
-        <div class="star">★</div>
-        <div class="star">★</div>
-        <div class="star">★</div>
-    </section>
-
-    <footer>
-        &copy; 2024 Nike7. All rights reserved.
-    </footer>
+    <div class="projects-section">
+        <h2>Cool People & Projects!</h2>
+        <a href="#" class="project-link">Project 1</a>
+        <a href="#" class="project-link">Project 2</a>
+        <a href="#" class="project-link">Project 3</a>
+        <a href="#" class="project-link">Project 4</a>
+    </div>
 
 </body>
 </html>
+
